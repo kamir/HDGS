@@ -40,6 +40,7 @@ public class SimpleTSTool {
         }
         
         if ( doLoad ) {
+            System.out.println( "Start loading ... ");
             // load all data from DB ...
             for( int i = 0; i < nrOfRows ; i++ ) {
                 Object o = HBaseTSAdapter.getAccessTS( "wikinodes", ""+i );
